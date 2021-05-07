@@ -1,0 +1,315 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Page Container Styles */
+.content {
+  width: 100%;
+  height: 100%;
+  margin-left: 60px;
+}
+
+/* Navigation Tooltip Styling */
+#fp-nav ul li .fp-tooltip {
+  color: white;
+  background-color: #222;
+  padding: 10px;
+}
+
+/* Navigation Styling */
+#fp-nav.fp-left {
+  background-color: #ed2d34;
+  left: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 60px;
+}
+
+/* Product Page Styling, needed for modal */
+#productPage {
+  position: relative;
+}
+
+/* Coloring the navbar icons white */
+#fp-nav ul li a span,
+#fp-nav ul li a.active span {
+  background-color: white;
+  color: black;
+}
+
+/* Hide title and buttons */
+#product-slider h3,
+#product-slider button {
+  display: none;
+}
+
+/* Product slider active item setting */
+#product-slider .active h3,
+#product-slider .active button {
+  display: block;
+}
+
+/* Modal Styling */
+#modal {
+  display: none;
+}
+
+#modal.modal-active {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url(./banner.jpg);
+  border: 1px solid black;
+  color: black;
+  z-index: 100;
+  width: 80vw;
+  height: 80vh;
+  transform: translate(-50%, -50%);
+}
+/* Used to prevent the carousel from stretching the screen */
+.owl-carousel {
+  overflow: hidden;
+}
+
+/* Used to scale down the home image. You can remove this. */
+img {
+  max-width: 40vw;
+}
+
+/* PLEASE START YOUR STYLES UNDERNEATH THIS */
+
+#homePage {
+  background-image: url(./banner.jpg);
+}
+
+.home-details {
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.home-heading {
+  font-size: 70px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.heading-word {
+  color: #ed2d34;
+  padding: 3px;
+}
+
+.btn {
+  border-radius: 30px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  color: black;
+  width: 30%;
+  height: 40%;
+  text-decoration: none;
+  padding: 15px;
+  margin: 30px;
+  font-weight: bolder;
+  transition: all;
+  cursor: pointer;
+  background-color: white;
+  outline: none;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row-reverse;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  gap: 40px;
+  padding: 30px;
+  font-size: 20px;
+}
+
+.icons a {
+  color: black;
+}
+
+.icons a:hover {
+  background-color: #ed2d34;
+  transition-delay: 0.2s;
+  color: white;
+  transition: ease-in 0.3s;
+  border-radius: 50%;
+  padding: 13px;
+}
+
+.btn:hover {
+  background-color: #ed2d34;
+  transition-delay: 0.2s;
+  color: white;
+  transition: ease-in 0.2s;
+  border: none;
+}
+
+#productPage {
+  background-image: url(./banner.jpg);
+}
+
+.product {
+  display: grid;
+  place-items: center;
+}
+
+#productPage {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10%;
+  font-size: 40px;
+}
+
+#product-slider img {
+  width: 500px !important;
+  height: 300px !important;
+  object-fit: contain;
+}
+
+.page-subtitle {
+  color: #ed2d34;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 40px;
+}
+
+#productPage .page-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.modelshoeimg {
+  width: 225px;
+  height: 125px;
+  object-fit: contain;
+}
+
+#modal h3 {
+  color: #ed2d34;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#modal h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.modelwords {
+  font-size: 20px;
+  font-weight: 100;
+  padding: 10px;
+}
+
+.btn2 {
+  border-radius: 30px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  color: black;
+  width: 23%;
+  height: 30%;
+  text-decoration: none;
+  padding: 15px;
+  margin: 30px;
+  font-weight: 600;
+  transition: all;
+  cursor: pointer;
+  background-color: white;
+  font-size: 20px;
+  align-items: center;
+}
+
+.btn2:hover {
+  background-color: #ed2d34;
+  transition-delay: 0.2s;
+  color: white;
+  transition: ease-in 0.2s;
+  border: none;
+}
+
+.mainshoe {
+  /* width: 500px; */
+  /* height: 300px; */
+  object-fit: contain;
+}
+
+.modelwords {
+  display: grid;
+  flex-direction: column;
+  margin: 20px;
+  width: 50%;
+}
+
+.close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  border: none;
+  font-size: 30px;
+  background-color: white;
+  outline: none;
+}
+
+.close:hover {
+  transition: ease-in 0.1s;
+  color: #ed2d34;
+  border: none;
+}
+
+.othershoes {
+  align-items: flex-end;
+}
+
+.modelshoes {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.colorwords {
+  color: #ed2d34;
+}
+
+.price {
+  font-size: 50px;
+  color: #ed2d34;
+  font-weight: 700;
+}
+
+
