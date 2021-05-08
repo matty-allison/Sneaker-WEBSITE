@@ -6,7 +6,6 @@ new fullpage("#fullpage", {
   navigation: true,
   navigationPosition: "left",
   navigationTooltips: ["Home", "Products", "Reviews", "Contact"],
-  center: true,
 });
 
 //   Init Animate On Scroll
@@ -61,5 +60,6 @@ fetch(randomUserURL)
       loop: true,
       autoplay: true,
       margin: 30,
+      autoplaySpeed: 1000,
     });
   });
